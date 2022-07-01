@@ -1,0 +1,51 @@
+header{
+    position: absolute;
+    z-index: 1;
+    padding: 2.8rem 5.6rem 0;
+
+    .brand-logo{
+        width: 10rem;
+        background: transparent;
+
+        .svg-icon-netflix-logo{
+            fill: #e50914;
+            width: 13.4rem;
+        }
+    }
+    .red-btn{
+        background-color: #e50914;
+        line-height: normal;
+        padding: .7rem 1.7rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        font-family: regular;
+        color: #fff;
+    }
+    select{
+        padding-left: 1.375rem;
+        padding-right: 1.375rem;
+        line-height: 1.3rem;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #fff;
+        font-family: regular;
+        height: 3.5rem;
+        border: 1px solid #fff;
+        background: transparent;
+
+        option{
+            background: #666;
+        }
+    }
+}
+
+
+.hero-section{
+    background-image:linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%),url('/assets/img/withoutLogin/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
