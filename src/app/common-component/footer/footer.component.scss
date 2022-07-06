@@ -1,0 +1,40 @@
+footer{
+    background: #000;
+    padding: 7rem 0;
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    select,a,p{
+        font-size: 1.6rem;
+        color: #757575;
+        margin-bottom: 3rem;
+        font-family: regular;
+        text-decoration: none;
+    }
+    ul{
+        padding: 0;
+        li{
+            margin-bottom: 1.6rem;
+
+            a{
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    select{
+        background: #000;
+        line-height: 1.7;
+        border: 1px solid #333;
+        font-size: 1.6rem;
+        padding: 1.5rem 3rem;
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+    .copyright{
+        font-size: 1.3rem;
+        margin-top: 2.4rem;
+    }
+}

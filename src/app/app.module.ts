@@ -8,6 +8,9 @@ import { LandingPageComponent } from './landing/landing-page/landing-page.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FormsModule} from "@angular/forms";
 import { FooterComponent } from './common-component/footer/footer.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 
@@ -26,6 +29,9 @@ import { FooterComponent } from './common-component/footer/footer.component';
     MatIconModule,
     BrowserAnimationsModule,
     FormsModule,
+    MatButtonModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
