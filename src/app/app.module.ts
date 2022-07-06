@@ -7,6 +7,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { LandingPageComponent } from './landing/landing-page/landing-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FormsModule} from "@angular/forms";
+import { FooterComponent } from './common-component/footer/footer.component';
 
 
 
@@ -14,7 +15,8 @@ import {FormsModule} from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    FooterComponent
     
     
   ],

@@ -4,6 +4,7 @@ import { LandingPageComponent } from './landing-page.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from "@angular/forms";
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -17,7 +18,8 @@ import {FormsModule} from "@angular/forms";
     CommonModule,
     MatInputModule,
     MatFormFieldModule,
-    FormsModule
+    FormsModule,
+    MatButtonModule
   ]
 })
 export class LandingPageModule { }
