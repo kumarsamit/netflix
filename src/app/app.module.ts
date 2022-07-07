@@ -11,6 +11,10 @@ import { FooterComponent } from './common-component/footer/footer.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { MoviesComponent } from './component/movies/movies.component';
+import { MovieDetailsComponent } from './component/movie-details/movie-details.component';
+import { Error404Component } from './component/error404/error404.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -19,7 +23,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
   declarations: [
     AppComponent,
     LandingPageComponent,
-    FooterComponent
+    FooterComponent,
+    MoviesComponent,
+    MovieDetailsComponent,
+    Error404Component
     
     
   ],
@@ -31,9 +38,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     FormsModule,
     MatButtonModule,
     MatInputModule,
+    HttpClientModule,
     MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
