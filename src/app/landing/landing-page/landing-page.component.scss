@@ -84,19 +84,8 @@ header{
     display: flex;
     width:60rem;
     max-width: 100%;
-    margin: auto;
-<<<<<<< HEAD
-    align-items: center;
-    background: #fff;
-
-    .mat-form-field-flex{
-        background: #fff;
-        border-radius: 0;
-        height:7rem;
-=======
 
     .mat-form-field{
->>>>>>> b765ce78f8ea1e39cc80cdae49ba02c53d309d40
         flex-grow: 1;
     }
 
@@ -138,14 +127,52 @@ header{
             color: #fff;
         }
         .tv-mockup{
+            width: 100%;
             position: absolute;
-            width:100%;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
 
-       
+        .card-story-animation{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border: 2px solid #222;
+            padding: 1rem;
+            border-radius: 1rem;
+            position: absolute;
+            bottom: 10%;
+            background: #000;
+            width: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            .card-img{
+                width: 6rem;
+                margin-right: 1rem;
+            }
+            .card-text{
+                flex-grow: 1;
+            }
+
+            .text1{
+                font-size: 1.6rem;
+                font-family: medium;
+                margin-bottom: 0;
+            }
+            .text2{
+                font-family: light;
+                font-size: 1.4rem;
+                color: #0071eb;
+                margin-bottom: 0;
+            }
+            .anim-icon{
+                width: 4.5rem;
+            }
+
+        }
+
     }
     
 }
