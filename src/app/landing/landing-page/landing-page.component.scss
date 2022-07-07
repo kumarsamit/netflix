@@ -87,9 +87,11 @@ header{
     margin: auto;
     align-items: center;
     background: #fff;
+
     .mat-form-field-flex{
         background: #fff;
         border-radius: 0;
-        padding: 0;
+        height:7rem;
+        flex-grow: 1;
     }
 }
