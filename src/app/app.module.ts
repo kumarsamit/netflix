@@ -15,6 +15,7 @@ import { MoviesComponent } from './component/movies/movies.component';
 import { MovieDetailsComponent } from './component/movie-details/movie-details.component';
 import { Error404Component } from './component/error404/error404.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 
@@ -39,6 +40,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatInputModule,
     HttpClientModule,
+    SlickCarouselModule,
     MatFormFieldModule
   ],
   providers: [],
