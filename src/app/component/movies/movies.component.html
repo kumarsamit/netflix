@@ -5,14 +5,24 @@
 </div>
  -->
 
-
-<ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig1" >
+ <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" >
     <div ngxSlickItem *ngFor="let item of list1" >
         <div class=" position-relative p-3">
             <!-- <img class="bg" src="{{base_poster_url}}{{item.backdrop_path}}" alt=""> -->
             <img class="w-100" src="{{base_poster_url}}{{item.poster_path}}" alt="">
             <h2 class="mb-1">{{ item.title }}</h2>
             <!-- <p>{{ item.overview }}</p> -->
+        </div>
+    </div>
+</ngx-slick-carousel>
+
+<ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig1" >
+    <div ngxSlickItem *ngFor="let item of list" >
+        <div class=" position-relative p-3">
+            <!-- <img class="bg" src="{{base_poster_url}}{{item.backdrop_path}}" alt=""> -->
+            <img class="w-100" src="{{base_poster_url}}{{item.poster_path}}" alt="">
+            <h2 class="mb-1">{{ item.title }}</h2>
+            <p>{{ item.overview }}</p>
         </div>
     </div>
 </ngx-slick-carousel>
