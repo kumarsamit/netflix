@@ -1,0 +1,143 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": [
+    {
+      "name": "test",
+      "email": "test@test.com",
+      "contact": "1234567890",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "password": "",
+      "id": 6
+    },
+    {
+      "email": "",
+      "contact": "",
+      "password": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "password": "",
+      "id": 8
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "password": "",
+      "id": 9
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "password": "",
+      "id": 10
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "password": "",
+      "id": 11
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "password": "",
+      "id": 12
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": 13
+    },
+    {
+      "name": "12",
+      "email": "1212",
+      "contact": "test@te1212st.com",
+      "password": "123412",
+      "id": 14
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "test@test.com",
+      "password": "1234",
+      "id": 15
+    },
+    {
+      "email": "test@test.com",
+      "password": "1234",
+      "id": 16
+    },
+    {
+      "email": "test@test.com",
+      "password": "1234",
+      "id": 17
+    },
+    {
+      "email": "test@test.com",
+      "password": "1234",
+      "id": 18
+    },
+    {
+      "email": "test@test.com",
+      "password": "1234",
+      "id": 19
+    },
+    {
+      "email": "test@test.com",
+      "password": "1234",
+      "id": 20
+    },
+    {
+      "email": "test@test.com",
+      "password": "123456",
+      "id": 21
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "test@test.com",
+      "password": "1234",
+      "id": 22
+    }
+  ]
+}

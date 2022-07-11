@@ -16,6 +16,10 @@ import { MovieDetailsComponent } from './component/movie-details/movie-details.c
 import { Error404Component } from './component/error404/error404.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { SigninComponent } from './component/signin/signin.component';
+import { SignupComponent } from './component/signup/signup.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -27,7 +31,10 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     FooterComponent,
     MoviesComponent,
     MovieDetailsComponent,
-    Error404Component
+    Error404Component,
+    SigninComponent,
+    SignupComponent,  
+
     
     
   ],
@@ -41,7 +48,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     MatInputModule,
     HttpClientModule,
     SlickCarouselModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

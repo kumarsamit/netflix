@@ -83,8 +83,7 @@ header{
 :host  ::ng-deep .search-bar {
     display: flex;
     width:60rem;
-    max-width: 90%;
-    margin: auto;
+    max-width: 100%;
 
     .mat-form-field{
         flex-grow: 1;
@@ -101,7 +100,7 @@ header{
     
     button{
         height: 6rem;
-        padding:0 5%;
+        padding:0 4rem;
         border:.1rem solid #e50914;
         background: #e50914;
         color: #fff;
@@ -177,7 +176,77 @@ header{
     }
     
 }
+.signin-form{
+    padding: 6rem;
+    background-color: rgba(0,0,0,.7);
+    border-radius: .4rem;
+    width: 50rem;
+    max-width: 90%;
 
+    input:focus{
+        outline: none;
+        border: none;
+    }
+
+    
+    .form-group input{
+        width: 100%;
+        background: #333;
+        color: #8c8c8c;
+        border: none;
+        font-family: regular;
+        padding: 1.2rem;
+    }
+
+    h2{
+        font-size: 3.2rem;
+        font-family: medium;
+        color: #fff;
+        margin-bottom: 4rem;
+    }
+    .btn-danger{
+        padding: 1.2rem;
+        font-family: medium;
+        background: #e50914;
+        font-size: 1.6rem;
+    }
+    .checkme{
+        color: #b3b3b3;
+        font-size: 1.3rem;
+        font-family: regular;
+
+        a{
+            color: #b3b3b3;
+            font-size: 1.3rem;
+            font-family: regular;
+            text-decoration: none;
+        }
+    }
+    .signup{
+        margin-top: 6rem !important;
+    }
+    .learn,
+    .signup{
+        font-size: 1.6rem;
+        font-family: regular;
+        color: #737373;
+
+        a{
+            color: #fff;
+            font-size: 1.6rem;
+            font-family: regular;
+            text-decoration: none;
+        }
+    }
+    .learn{
+        font-size: 1.3rem;
+
+        a{
+            font-size: 1.3rem;
+            color: #0071eb;
+        }
+    }
+}
 
 @media only screen and (max-width: 767px) {
     header{
@@ -188,6 +257,8 @@ header{
         .mx-5{
             margin: 0 1rem !important;
         }
-    
-  }
+    }
+    .signin-form{
+        padding: 1.5rem;
+    }
 }
