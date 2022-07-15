@@ -19,6 +19,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SigninComponent } from './component/signin/signin.component';
 import { SignupComponent } from './component/signup/signup.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './common-component/header/header.component';
 
 
 
@@ -33,7 +34,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MovieDetailsComponent,
     Error404Component,
     SigninComponent,
-    SignupComponent,  
+  HeaderComponent,
+    SignupComponent,
 
     
     

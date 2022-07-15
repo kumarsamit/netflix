@@ -177,7 +177,42 @@ header{
     }
     
 }
+.faq{
+    h2{
+        text-align: center;
+    }
+    .accordion{
+        margin: 5rem auto 0;
+        width: 80%;
+    }
+    .accordion-item{
+        border: none;
+        background: none;
+        margin-bottom: 1rem;
+    }
+    .accordion-header{
+        background: #303030 !important;
+        border-bottom:1px solid #000 ;
+        margin-bottom: 0;
 
+    }
+    .accordion-button{
+        background: transparent;
+        font-family: regular;
+        margin-bottom: 1px;
+        padding: 1.5rem;
+        font-size: 2.2rem;
+        color: #fff;
+
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .accordion-body{
+        background: #303030;
+    }
+}
 
 @media only screen and (max-width: 767px) {
     header{
