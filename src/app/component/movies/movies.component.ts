@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { MoviesService } from 'src/app/movies.service';
+import { MoviesService } from 'src/app/auth-guard/movies.service';
+
 
 @Component({
 	selector: 'app-movies',
@@ -14,8 +15,8 @@ export class MoviesComponent implements OnInit {
 	base_poster_url = "https://image.tmdb.org/t/p/w500";
 	api_key = "&api_key=ddf611caad1fe1aab5910321c0cfa7ba";
 	data: any;
-	slideConfig = {"slidesToShow": 6, "slidesToScroll": 1, "loop":true, swipeToSlide: true};
-	slideConfig1 = {"slidesToShow": 6, "slidesToScroll": 1,"loop":true, swipeToSlide: true};
+	slideConfig = {"slidesToShow": 9, "slidesToScroll": 1, "loop":true, swipeToSlide: true};
+	slideConfig1 = {"slidesToShow": 9, "slidesToScroll": 1,"loop":true, swipeToSlide: true};
 
 
 	constructor(private movie: MoviesService, private route: ActivatedRoute) {

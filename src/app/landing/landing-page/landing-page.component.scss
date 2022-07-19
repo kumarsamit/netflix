@@ -177,7 +177,43 @@ header{
     }
     
 }
+.faq{
+    h2{
+        text-align: center;
+    }
+    .accordion{
+        margin: 5rem auto 0;
+        width: 80%;
+    }
+    .accordion-item{
+        border: none;
+        background: none;
+        margin-bottom: 1rem;
+    }
+    .accordion-header{
+        background: #303030 !important;
+        border-bottom:1px solid #000 ;
+        margin-bottom: 0;
 
+    }
+    .accordion-button{
+        background: transparent;
+        font-family: regular;
+        margin-bottom: 1px;
+        padding: 2.5rem;
+        font-size: 2.2rem;
+        color: #fff;
+
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .accordion-body{
+        background: #303030;
+        padding: 2.5rem;
+    }
+}
 
 @media only screen and (max-width: 767px) {
     header{
@@ -188,6 +224,14 @@ header{
         .mx-5{
             margin: 0 1rem !important;
         }
-    
-  }
+    }
+    .accordion{
+    width: 90% !important;
+}
+}
+.accordion-button::after {
+    background-image:url('/assets/img/withoutLogin/download-white.svg');
+    height: 2.4rem;
+    width: 2.4rem;
+    background-size: 2.4rem;
 }

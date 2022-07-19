@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 
 <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig1" >
     <div ngxSlickItem *ngFor="let item of list1" >
@@ -21,3 +22,18 @@
         </div>
     </div>
 </ngx-slick-carousel>
+=======
+<app-header></app-header>
+<div class="slider-list mt-5">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig1" >
+        <div ngxSlickItem *ngFor="let item of list1" >
+            <div class=" position-relative p-3">
+                <!-- <img class="bg" src="{{base_poster_url}}{{item.backdrop_path}}" alt=""> -->
+                <img class="w-100" src="{{base_poster_url}}{{item.poster_path}}" alt="">
+                <p class="mb-1">{{ item.title }}</p>
+                <!-- <p>{{ item.overview }}</p> -->
+            </div>
+        </div>
+    </ngx-slick-carousel>
+</div>
+>>>>>>> 8782f9062d87e66a1190c657244392fb3a8b43e5

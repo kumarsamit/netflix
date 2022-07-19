@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { RouterModule, Routes } from '@angular/router';
 import { MoviesComponent } from './movies.component';
-import { HeaderInnerComponent } from './header-inner/header-inner.component';
 
 
 const routes: Routes = [{
@@ -15,7 +14,6 @@ const routes: Routes = [{
 
 @NgModule({
   declarations: [
-    HeaderInnerComponent
   ],
   imports: [
     CommonModule,
