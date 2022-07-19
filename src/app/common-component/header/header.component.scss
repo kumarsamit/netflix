@@ -1,7 +1,7 @@
 header{
     width: 100%;
     z-index: 1;
-    padding: 1rem 5.6rem 0;
+    padding: 1rem 0rem;
     background: #000;
 
     .navbar-brand{
@@ -18,5 +18,11 @@ header{
         font-size: 1.6rem;
         margin: 0 1rem;
         font-family: regular;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container{
+        max-width: 1240px !important;
     }
 }

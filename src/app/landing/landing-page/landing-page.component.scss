@@ -200,7 +200,7 @@ header{
         background: transparent;
         font-family: regular;
         margin-bottom: 1px;
-        padding: 1.5rem;
+        padding: 2.5rem;
         font-size: 2.2rem;
         color: #fff;
 
@@ -211,6 +211,7 @@ header{
     }
     .accordion-body{
         background: #303030;
+        padding: 2.5rem;
     }
 }
 
@@ -223,6 +224,14 @@ header{
         .mx-5{
             margin: 0 1rem !important;
         }
-    
-  }
+    }
+    .accordion{
+    width: 90% !important;
+}
+}
+.accordion-button::after {
+    background-image:url('/assets/img/withoutLogin/download-white.svg');
+    height: 2.4rem;
+    width: 2.4rem;
+    background-size: 2.4rem;
 }

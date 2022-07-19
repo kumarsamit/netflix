@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknetflix=self.webpackChunknetflix||[]).push([[196],{3196:(a,n,o)=>{o.r(n),o.d(n,{Error404Module:()=>e});var u=o(9808),l=o(5e3);let e=(()=>{class r{}return r.\u0275fac=function(E){return new(E||r)},r.\u0275mod=l.oAB({type:r}),r.\u0275inj=l.cJS({imports:[[u.ez]]}),r})()}}]);
