@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuardGuard } from './auth-guard/auth-guard.guard';
 
 const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./landing/landing-page/landing-page.module').then((m) => m.LandingPageModule)
   },
+
   {
     path:'signin',
     loadChildren: () => import('./component/signin/signin.module').then((m) => m.SigninModule)
@@ -16,9 +18,14 @@ const routes: Routes = [
   },
   {
     path:'movies',
+    canActivate:[AuthGuardGuard],
     loadChildren: () => import('./component/movies/movies.module').then((m) => m.MoviesModule)
-  }
-  
+  },
+  {
+    path:'**',
+    loadChildren:() => import('./component/error404/error404.module').then((m) => m.Error404Module)
+  },
+
 ];
 
 @NgModule({

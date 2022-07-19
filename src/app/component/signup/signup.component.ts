@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
-import { MoviesService } from 'src/app/movies.service';
+import { MoviesService } from 'src/app/auth-guard/movies.service';
 import { signupModal } from './signup.modal';
 
 
@@ -40,9 +40,6 @@ export class SignupComponent implements OnInit {
         console.log(res);
         this.registerUserForm.reset();
         this.router.navigate(['signin'])
-      },
-      (err) => {
-        alert('something went wrong');
       }
     );
   }

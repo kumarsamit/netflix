@@ -8,6 +8,7 @@ import { map } from 'rxjs';
 })
 export class MoviesService {
 
+
   constructor(private http:HttpClient,private router:ActivatedRoute) { }
   getData(url:any){
     return this.http.get(url)
@@ -17,5 +18,9 @@ export class MoviesService {
     return this.http.post<any>("http://localhost:3000/profile",data).pipe(map((res:any) => {
       return res
     }))
+  }
+  
+  isLoggedIn(){
+    return   localStorage.getItem('token');
   }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { MoviesService } from 'src/app/movies.service';
+import { MoviesService } from 'src/app/auth-guard/movies.service';
+
 
 @Component({
 	selector: 'app-movies',
