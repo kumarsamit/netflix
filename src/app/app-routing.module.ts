@@ -20,6 +20,10 @@ const routes: Routes = [
     path:'movies',
     canActivate:[AuthGuardGuard],
     loadChildren: () => import('./component/movies/movies.module').then((m) => m.MoviesModule)
+  },{
+    path:'movies/:id',
+    canActivate:[AuthGuardGuard],
+    loadChildren: () => import('./component/movie-details/movie-details.module').then((m)=> m.MovieDetailsModule)
   },
   {
     path:'**',
