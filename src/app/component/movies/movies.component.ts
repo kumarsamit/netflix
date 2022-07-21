@@ -31,17 +31,6 @@ export class MoviesComponent implements OnInit {
 
 		});
 
-
-
-
-		this.movie.getData(this.base_api_url + "/discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2020-10-22" + this.api_key).subscribe((data) => {
-			this.data = data;
-			// console.log(data)
-			this.list1 = Object.values(data)[1]
-
-		});
-		console.log(this.trailer)
-
 	}
 
 

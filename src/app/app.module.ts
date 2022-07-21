@@ -20,6 +20,7 @@ import { SigninComponent } from './component/signin/signin.component';
 import { SignupComponent } from './component/signup/signup.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './common-component/header/header.component';
+import { PreviewComponent } from './component/preview/preview.component';
 
 
 
@@ -37,6 +38,7 @@ import { HeaderComponent } from './common-component/header/header.component';
     SigninComponent,
   HeaderComponent,
     SignupComponent,
+    PreviewComponent,
 
     
     

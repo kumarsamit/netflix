@@ -27,6 +27,7 @@ const routes: Routes = [
   },
   {
     path:'**',
+    canActivate:[AuthGuardGuard],
     loadChildren:() => import('./component/error404/error404.module').then((m) => m.Error404Module)
   },
 
