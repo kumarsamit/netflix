@@ -21,6 +21,10 @@ import { SignupComponent } from './component/signup/signup.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './common-component/header/header.component';
 import { PreviewComponent } from './component/preview/preview.component';
+import { HomeComponent } from './component/home/home.component';
+import { TvShowsComponent } from './component/tv-shows/tv-shows.component';
+import { PopularComponent } from './component/popular/popular.component';
+import { ChildrenComponent } from './component/children/children.component';
 
 
 
@@ -39,6 +43,10 @@ import { PreviewComponent } from './component/preview/preview.component';
   HeaderComponent,
     SignupComponent,
     PreviewComponent,
+    HomeComponent,
+    TvShowsComponent,
+    PopularComponent,
+    ChildrenComponent,
 
     
     
