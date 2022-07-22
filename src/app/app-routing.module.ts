@@ -45,9 +45,24 @@ const routes: Routes = [
     loadChildren: ()=> import('./component/children/children.module').then((m) => m.ChildrenModule)
   },
   {
+    path:'children/:id',
+    canActivate:[AuthGuardGuard],
+    loadChildren: () => import('./component/movie-details/movie-details.module').then((m)=> m.MovieDetailsModule)
+  },
+  {
     path:'movies/:id',
     canActivate:[AuthGuardGuard],
     loadChildren: () => import('./component/movie-details/movie-details.module').then((m)=> m.MovieDetailsModule)
+  },
+  {
+    path:'home/:id',
+    canActivate:[AuthGuardGuard],
+    loadChildren: () => import('./component/movie-details/movie-details.module').then((m)=> m.MovieDetailsModule)
+  },
+  {
+    path:'tvShows/:id',
+    canActivate:[AuthGuardGuard],
+    loadChildren: () => import('./component/tv-show-details/tv-show-details.module').then((m)=> m.TvShowDetailsModule)
   },
   {
     path:'**',

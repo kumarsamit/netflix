@@ -23,7 +23,7 @@ export class MovieDetailsComponent implements OnInit {
 			console.log(trailerList);
 			let rand = this.getRandomInt(this.trailerList.results.length)
 			// this.trailerurl =  "https://youtu.be/" + this.trailerList.results[rand].key;
-			this.trailerurl = this.domSanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/" + this.trailerList.results[rand].key)
+			this.trailerurl = this.domSanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/" + this.trailerList.results[rand].key + '?rel=0&autoplay=1')
 			console.log(this.trailerurl)
 		})
 	}

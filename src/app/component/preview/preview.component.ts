@@ -17,10 +17,11 @@ export class PreviewComponent implements OnInit {
 	trailer:any;
 	trailerList:any;
 	trailerurl:any;
+	video:any;
 
 
   constructor(private movie: MoviesService, private route: ActivatedRoute,private domSanitizer: DomSanitizer) {
-		this.movie.getData(this.base_api_url + "/discover/movie?sort_by=popularity.desc" + this.api_key).subscribe((data) => {
+		this.movie.getData(this.base_api_url + "/discover/movie?sort_by=revenue.desc" + this.api_key).subscribe((data) => {
 			this.list = Object.values(data)[1]
 			let rand = this.getRandomInt(this.list.length)
 			this.trailer = "https://api.themoviedb.org/3/movie/" + this.list[rand].id + "/videos?api_key=ddf611caad1fe1aab5910321c0cfa7ba";
@@ -28,9 +29,10 @@ export class PreviewComponent implements OnInit {
 			this.movie.getData(this.trailer).subscribe((trailerList) => {
 				this.trailerList = trailerList
 				let rand = this.getRandomInt(this.trailerList.results.length)
-				this.trailerurl = this.domSanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/" + this.trailerList.results[rand].key)
+				this.trailerurl = this.domSanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/" + this.trailerList.results[rand].key + '?controls=0&showinfo=0&rel=0&autoplay=1&loop=1')  
+				this.video = this.trailerList.results[rand].name
 			})
-			this.trailer= "www.youtube.com/watch?v=" +  this.route.snapshot.params[this.list.id];
+			
 
 		});
 

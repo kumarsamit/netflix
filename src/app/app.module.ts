@@ -25,6 +25,23 @@ import { HomeComponent } from './component/home/home.component';
 import { TvShowsComponent } from './component/tv-shows/tv-shows.component';
 import { PopularComponent } from './component/popular/popular.component';
 import { ChildrenComponent } from './component/children/children.component';
+import { TomCruiseComponent } from './component/categories/tom-cruise/tom-cruise.component';
+import { BestDramaComponent } from './component/categories/best-drama/best-drama.component';
+import { PopularMoviesComponent } from './component/categories/popular-movies/popular-movies.component';
+import { ScienceFictionComponent } from './component/categories/science-fiction/science-fiction.component';
+import { PupularKidsComponent } from './component/categories/pupular-kids/pupular-kids.component';
+import { ComedyMoviesComponent } from './component/categories/comedy-movies/comedy-movies.component';
+import { RmoviesComponent } from './component/categories/rmovies/rmovies.component';
+import { BradPittComponent } from './component/categories/brad-pitt/brad-pitt.component';
+import { HighestGrossingComponent } from './component/categories/highest-grossing/highest-grossing.component';
+import { Best2010Component } from './component/categories/best2010/best2010.component';
+import { Best2000Component } from './component/categories/best2000/best2000.component';
+
+import { Best2015Component } from './component/categories/best2015/best2015.component';
+
+import { PopularTvShowsComponent } from './component/categories/popular-tv-shows/popular-tv-shows.component';
+import { TvShowDetailsComponent } from './component/tv-show-details/tv-show-details.component';
+
 
 
 
@@ -47,6 +64,20 @@ import { ChildrenComponent } from './component/children/children.component';
     TvShowsComponent,
     PopularComponent,
     ChildrenComponent,
+    TomCruiseComponent,
+    BestDramaComponent,
+    PopularMoviesComponent,
+    ScienceFictionComponent,
+    PupularKidsComponent,
+    ComedyMoviesComponent,
+    RmoviesComponent,
+    BradPittComponent,
+    HighestGrossingComponent,
+    Best2010Component,
+    PopularTvShowsComponent,
+    TvShowDetailsComponent,
+    Best2015Component,
+    Best2000Component
 
     
     

@@ -1,16 +1,53 @@
 
-<app-header></app-header>
 <app-preview></app-preview>
 
-<div class="slider-item">
-    <div class="slider-heading">Popular Movies</div>
-    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" >
-        <div ngxSlickItem *ngFor="let item of list" >
-            <div class="movie-card position-relative p-2" routerLink="{{item.id}}">
-                <img class="bg w-100" src="{{base_poster_url}}{{item.backdrop_path}}" alt="">
+<div class="slider-list">
+    <div class="container-fluid">
+        <div class="row">
+            
+            <div class="col-md-12">
+                <app-highest-grossing></app-highest-grossing>
             </div>
+
+            <div class="col-md-12">
+                <app-best2010></app-best2010>
+            </div>
+
+            <div class="col-dm-12">
+                <app-tom-cruise></app-tom-cruise>
+            </div>
+
+
+            <div class="col-md-12">
+                <app-popular-movies></app-popular-movies>
+            </div>
+
+            <div class="col-md-12">
+                <app-best-drama></app-best-drama>
+            </div>
+
+            <div class="col-md-12">
+                <app-science-fiction></app-science-fiction>
+            </div>
+
+            <div class="col-md-12">
+                <app-rmovies></app-rmovies>
+            </div>
+
+            <div class="col-md-12">
+                <app-pupular-kids></app-pupular-kids>
+            </div>
+            
+            <div class="col-md-12">
+                <app-comedy-movies></app-comedy-movies>
+            </div>
+
+            <div class="col-md-12">
+                <app-brad-pitt></app-brad-pitt>
+            </div>
+
         </div>
-    </ngx-slick-carousel>
+    </div>
 </div>
 
-
+<app-footer></app-footer>

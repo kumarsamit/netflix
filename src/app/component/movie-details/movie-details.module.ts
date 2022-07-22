@@ -6,7 +6,6 @@ import { MovieDetailsComponent } from './movie-details.component';
 const routes: Routes = [{
   path: '',
   component:  MovieDetailsComponent
-
 }];
 
 @NgModule({
