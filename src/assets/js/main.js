@@ -14,3 +14,7 @@ best_drama = "/discover/movie?with_genres=18&sort_by=vote_average.desc&vote_coun
 
 // movie_list = base_api_url + "movie type" + api_key
 // movie_poster  = base_poster_url + "poster url from api data"
+
+$('body').on('click' , '.dropdown-toggle', function(e){
+    $('.dropdown-menu').toggleClass('show');
+})

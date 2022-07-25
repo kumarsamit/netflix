@@ -41,9 +41,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" routerLink="/children">children</a>
                                 </li>
-                                <div class="dropdown">
+                                <li class="dropdown">
                                     <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        data-bs-toggle="dropdown" aria-expanded="false" onclick="$('.dropdown-menu').toggleClass('show')">
                                         <img src="assets/img/withoutLogin/user.png" alt="">
                                     </a>
 
@@ -52,7 +52,8 @@
                                         <li><a class="dropdown-item" href="#">Another action</a></li>
                                         <li><a class="dropdown-item" (click)="logOutUser()">Logout</a></li>
                                     </ul>
-                                </div>
+                                </li>
+                                
                             </ul>
                         </div>
                     </div>
